@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Poppins"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+		<title>Tip Calculator</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="inner">
+				<div class="bill-tip-container">
+					<span class="symbol">$</span>
+					<label for="total-bill-input">Bill Total</label>
+					<input
+						type="number"
+						name="total-bill-input"
+						id="total-bill-input"
+						value=""
+						min="0"
+						placeholder="0.00"
+						pattern="[0-9]*"
+					/>
+				</div>
+				<div class="bill-tip-container">
+					<span class="symbol">%</span>
+					<label for="tip-input">Tip</label>
+					<input
+						type="number"
+						name="tip-input"
+						id="tip-input"
+						value=""
+						min="0"
+						placeholder="0"
+						pattern="[0-9]*"
+					/>
+				</div>
+
+				<div class="people--total-person-container">
+					<div class="people-container">
+						<label for="number-of-people">People</label>
+						<div class="input-control-container">
+							<div class="increment">+</div>
+							<input
+								type="number"
+								name="number-of-people"
+								id="number-of-people"
+								value="1"
+								min="1"
+								placeholder=""
+							/>
+							<div class="decrement">-</div>
+						</div>
+					</div>
+					<div class="total-per-person">
+						<div class="text">Total per Person</div>
+						<div class="money-per-person-amnt">
+							<span class="currency">$</span
+							><span class="totalAmount">0.00</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
