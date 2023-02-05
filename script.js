@@ -35,7 +35,9 @@ function calcTotalPerPerson() {
 	const numberOfPeopleValue = Number(numberOfPeople.value);
 	const tipAmount = totalBillValue * (tipValue / 100);
 	totalPerPerson = (totalBillValue + tipAmount) / numberOfPeopleValue;
-	moneyPerPerson.textContent = totalPerPerson.toFixed(2);
+	moneyPerPerson.textContent = `$${totalPerPerson
+		.toFixed(2)
+		.toLocaleString("en-US")}`;
 }
 
 addEventListener(peopleIncreament, "click");
